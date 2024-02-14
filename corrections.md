@@ -50,14 +50,6 @@ Nu regner din @boardname@ afstanden ud i meter, hvis du bevæger dig med 2 meter
 
 
 ```template
-input.onButtonPressed(Button.B, function () {
-    slutTid = input.runningTime()
-    beregnetTid = slutTid - startTid
-    beregnetTid= beregnetTid / 1000
-    afstand = beregnetTid * 7.77
-    basic.showNumber(afstand)
-    basic.showString(" km")})
-
 input.onButtonPressed(Button.A, function () {
     startTime = input.runningTime()
     basic.showLeds(`
@@ -68,4 +60,12 @@ input.onButtonPressed(Button.A, function () {
     . . . . .
     `)
 })
+
+input.onButtonPressed(Button.B, function () {
+    slutTid = input.runningTime()
+    beregnetTid = slutTid - startTid
+    beregnetTid= beregnetTid / 1000
+    afstand = beregnetTid * 7.77
+    basic.showNumber(afstand)
+    basic.showString(" km")})
 ```
