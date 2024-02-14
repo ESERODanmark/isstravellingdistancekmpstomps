@@ -57,4 +57,15 @@ input.onButtonPressed(Button.B, function () {
     afstand = beregnetTid * 7.77
     basic.showNumber(afstand)
     basic.showString(" km")})
+
+input.onButtonPressed(Button.A, function () {
+    startTime = input.runningTime()
+    basic.showLeds(`
+    . . . . .
+    . . # . .
+    . . # . .
+    . . # . .
+    . . . . .
+    `)
+})
 ```
