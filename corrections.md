@@ -20,7 +20,7 @@ input.onButtonPressed(Button.B, function () {
 ```
 
 ## Ændring af hastighed
-Ændr 7.77 i `||variable.set afstand to||` til den hastighed du vil regne ud fra. I eksemplet skriver vi 2.
+Ændr 7.77 i `||variable.sæt afstand til||` til den hastighed du vil regne ud fra. I eksemplet skriver vi 2.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
@@ -33,7 +33,7 @@ input.onButtonPressed(Button.B, function () {
 ```
 
 ## Ændring fra km til m
-Ændr km  i `||basic.showString(" km")||` til m `||basic.showString(" m")||`. Dit resultat har nu enheden meter.
+Ændr km  i `||basic.vis streng (" km")||` til m `||basic.vis streng (" m")||`. Dit resultat har nu enheden meter.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
